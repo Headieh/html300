@@ -1,14 +1,55 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Assignment 02</title>
-    </head>
-    <body>
-        <main class="main">
-            <h1>title</h1>
-        </main>
-    </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="https://kit.fontawesome.com/4c496fc4fb.js" crossorigin="anonymous"></script>
+      <title>Assignment 02</title>
+   </head>
+   <body>
+      <h1>Assignment 02</h1>
+      <main class="main">
+         <div class="container">
+            <div class="middle">
+               <div class="leftside">
+                  <img src='img/unsplash-headshot.jpg' alt="Headshot of Mr. Steve Smith.
+                     Professional looking dude with light blue collared button down shirt,
+                     short brown hair and pearly white smile"><br>
+                  <div class='name'><strong> Steve Smith </strong></div>
+                  <br>
+                  <div class='title'><dfn> Project Manager</dfn></div>
+               </div>
+               <div class="rightside">
+                  <!-- personally I liked this with jQuery
+                     but needed to demonstrate nesting for assignment-->
+                  <!--<div class='description'>Company: Front End Dev Co </div>
+                     <div class='description'>Experience: 3 years</div>
+                     <div class='description'>School: UW </div>
+                     <div class='description'>Major: Marketing</div>
+                     <div class='description'>Email: steve@fedc.com </div>
+                     <div class='linkedin'>
+                       <i class="fab fa-linkedin fa-2x"></i>steve.linkedinprofile.com
+                     </div> -->
+                  <div class='company'>Front End Dev Co </div>
+                  <div class='experience'>3 years</div>
+                  <div class='school'>UW </div>
+                  <div class='major'>Marketing</div>
+                  <div class='email'>steve@fedc.com </div>
+                  <div class='linkedin'>
+                     <i class="fab fa-linkedin fa-2x"></i>
+                     steve.linkedinprofile.com
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!--<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+         <script>$(".description").html(function(){
+               var text= $(this).text().trim().split(" ");
+               var first = text.shift();
+               return (text.length > 0 ? "<span class='label'>"+ first + "</span> " : first) + text.join(" ");
+             });</script> -->
+   </body>
 </html>
