@@ -1,0 +1,112 @@
+/*https://codepen.io/Digitango/pen/YQQBXR pulsing animation source code */
+
+.fa-heart-o {
+  color: $red;
+  padding:.5em;
+  animation: $a-heart;
+  cursor: pointer;
+}
+
+//no pulsing when clicked on
+.fa-heart {
+  transform: scale(2);
+  padding:.5em;
+  color: $red;
+  cursor: pointer;
+}
+
+//no pulsing when hovered - larger heart
+.heart:hover {
+  transform: scale(2);
+  animation:'';
+  cursor: pointer;
+}
+
+img{
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.card {
+  $self: &;
+  width: 33%;
+  position: relative;
+}
+
+
+/*https://www.w3schools.com/howto/howto_css_flip_card.asp card flipping source code*/
+
+.card.is-flipped .card__face{
+   transform: rotateY(180deg);
+}
+
+.card__face {
+    $self: &;
+    //height:auto;
+    text-align: center;
+    transition: transform 1.5s;
+    transition-timing-function: linear;
+    transform-style: preserve-3d;
+    //box-shadow: 3px -3px 3px #aaa;
+
+    &--front, &--back {
+      position: absolute;
+      overflow:hidden;
+      width:100%;
+      backface-visibility: hidden;
+      height:auto;
+    }
+
+
+    &--back {
+      transform: rotateY(180deg);
+      background: $gray;
+      //height:auto;
+      //height:100%;
+    }
+  }
+
+
+
+a{
+  color:$lighten-black;
+  display: block;
+  padding: .5em;
+  margin: .5em;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover, &:focus {
+    color:$darken-blue;
+    text-decoration: underline;
+  }
+}
+
+/* https://codepen.io/jstn/pen/zuDst underline animation source code
+personally like the middle to outward better but had to look different for assignment*/
+.flipper {
+  position: relative;
+  display: inline-block;
+  &:before, &:after {
+       @include underline-main;
+     }
+  &:before {
+      //left: 50%;
+      left: 0;
+    }
+  &:after {
+      //right: 50%;
+      right:0;
+    }
+
+  &:hover {
+     cursor: pointer;
+     &:before, &:after {
+       width:50%;
+       opacity: 1;
+      }
+    }
+  }
+
+
+/* other cool ideas https://css-tricks.com/having-fun-with-link-hover-effects/ */
