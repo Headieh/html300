@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Assignment 05 - CSS Grid</title>
-    </head>
-    <body>
-        <main class="main">
-          
-        </main>
-    </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Assignment 05 - CSS Grid</title>
+   </head>
+   <body>
+      <div class="grid-container">
+         <div class="header">Headieh's Travels</div>
+         <!--Class Example - Drop down - possibly use later-->
+         <!-- https://codepen.io/akatz6/pen/QPRPRj?editors=1100-->
+         <div class="nav">
+            <div class="nav__item">Home</div>
+            <div class="nav__item">Adventures</div>
+            <div class="nav__item">Deals</div>
+            <div class="nav__item">Contact Us</div>
+            <div class="nav__item">Login</div>
+         </div>
+         <div class="side">
+            <ul class="side__list" data-title="Central America">
+               <li class="side__item">
+                  <a href=# class=side__link>Costa Rica</a>
+               </li>
+               <li class="side__item">
+                  <a href=# class=side__link>Belize</a>
+               </li>
+            </ul>
+            <ul class="side__list" data-title="Europe">
+               <li class="side__item">
+                  <a href=# class=side__link>Croatia</a>
+               </li>
+               <li class="side__item">
+                  <a href=# class=side__link>Italy</a>
+               </li>
+            </ul>
+            <ul class="side__list" data-title="Asia">
+               <li class="side__item">
+                  <a href=# class=side__link>Thailand</a>
+               </li>
+            </ul>
+         </div>
+         <div class="main">
+            <!-- will put in actual site content later (including animations from previous lesson)-->
+            <!--inputed some dummy text with multiple paragraphs showing flexbox working properly -->
+            <p>Lorem ipsum</p>
+            <p>dolor sit amet,</p>
+            <p>consectetur</p>
+            <p>adipisicing elit.
+               Nobis, iste, dolore. Quae optio enim laudantium earum neque
+            </p>
+            <p>at nulla odio illum perspiciatis quisquam, dicta,
+               sunt explicabo atque animi, eius quam sequi ipsa beatae
+               repudiandae impedit facilis deserunt maxime alias reiciendis!
+               Impedit porro dolorum eaque doloribus dolor, quae cupiditate
+            </p>
+            <p>repellat maiores totam. Dignissimos quis aspernatur in molestiae</p>
+            <p>beatae? Eum delectus repellendus magni. Exercitationem doloribus,
+               animi beatae id, temporibus cupiditate iste excepturi reiciendis
+               libero assumenda perspiciatis quaerat natus dolore architecto ratione
+               asperiores illo accusamus nam saepe neque ea maxime minus eius, ipsam.
+            </p>
+         </div>
+         <div class="foot">
+            <div class="foot__item">Travel Insurance</div>
+            <div class="foot__item">Booking Policy</div>
+            <div class="foot__item">Careers</div>
+            <div class="foot__item">Contact Us</div>
+            <div class="foot__item">FAQ</div>
+         </div>
+      </div>
+   </body>
 </html>
