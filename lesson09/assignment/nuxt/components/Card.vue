@@ -49,10 +49,8 @@
               </div>
             </b-modal>
 
-
-            <a :href="card.imagelink" target="_blank" class="card-link">Travel Photos</a>
-
-            <!--<nuxt-link target="_blank" class="card-link" :to="card.imagelink">Travel Photos</nuxt-link>-->
+            <!--<a :href="`/travelphotos#${card.id}`" target="_blank" class="card-link">Travel Photos</a>-->
+            <nuxt-link target="_blank" class="card-link" :to="`/travelphotos#${card.id}`">Travel Photos</nuxt-link>
 
             <a href="#" ref="btnShow" @click="showModal(card.id+'currency')" class="card-link">Currency Rate</a>
 

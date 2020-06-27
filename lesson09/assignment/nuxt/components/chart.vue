@@ -105,6 +105,9 @@ export default {
         title: {
           text: ''
         },
+        chart: {
+        zoomType: 'x'
+    },
         yAxis: [{
      title: {
        text: 'Percipitation (mm)'
