@@ -143,7 +143,6 @@ export default {
 
 <style scoped lang='scss'>
 @import './main.scss';
-@import './main.scss';
 /*.modal-dialog {
   max-height: 100%;
   display: inline-block;

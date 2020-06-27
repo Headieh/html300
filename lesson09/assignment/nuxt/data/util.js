@@ -92,7 +92,12 @@ export {
   decks
 }
 
-var accordionObject = [{
+var accordionObject = [
+  {
+      title: "About",
+      text: "Hello and welcome to my site. This project was made to demonstrate my skills using Vue and to inspire wanderlust to all those who travel to this page. This site provides helpful information before traveling abroad, and recommendations based on personal experience. I hope you enjoy looking through it as much as I enjoyed making it. Let the adventures begin!"
+    },
+  {
     title: "Booking Conditions",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni mollitia modi quis, sequi minima voluptatum aliquid est veritatis, culpa voluptas dolores ea, itaque dolorem fugiat eius odio inventore quibusdam. Voluptatibus reiciendis magnam autem nam, quisquam eum cumque possimus. Perspiciatis, deleniti, illum alias cupiditate est, nihil atque, explicabo esse amet laudantium tempore? Placeat, optio tenetur. Facere laborum velit omnis ea veniam expedita, suscipit architecto consectetur itaque. Ipsum possimus, animi tenetur consequatur odio quasi illum deleniti amet itaque. Impedit ipsam cumque et, fuga. Sed distinctio laudantium, delectus aperiam obcaecati ex tenetur eius."
   },
