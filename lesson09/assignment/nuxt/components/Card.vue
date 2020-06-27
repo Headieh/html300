@@ -50,14 +50,14 @@
             </b-modal>
 
 
+            <a :href="card.imagelink" target="_blank" class="card-link">Travel Photos</a>
 
-            <nuxt-link target="_blank" class="card-link" :to="card.imagelink">Travel Photos</nuxt-link>
+            <!--<nuxt-link target="_blank" class="card-link" :to="card.imagelink">Travel Photos</nuxt-link>-->
 <br>
             <currency :card='card' :money='money' v-if="card.cur != 'USD'"></currency>
             <p v-if="card.cur == 'USD'">Currency: USD</p>
             <br>
 
-            <!--<a :href="card.imagelink" target="_blank" class="card-link">Travel Photos</a>-->
 
           </div>
         </div>
