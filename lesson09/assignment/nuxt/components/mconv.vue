@@ -39,8 +39,7 @@ export default {
     let usdList = ['USD']
     let eurList = ['EUR']
     let otherList = [this.cur.toUpperCase()]
-    console.log(otherList)
-    console.log('otherList')
+    console.log('convert currency to: ', otherList)
 
     return {
 

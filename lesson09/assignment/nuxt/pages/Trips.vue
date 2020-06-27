@@ -106,9 +106,8 @@ export default {
       //.then(response => (this.money = response.data))
       .then(
         response => {
-          console.log('response1');
           (this.money = response.data);
-          console.log(this.money);
+          console.log('API Data:', this.money);
         }
       )
       .catch(
