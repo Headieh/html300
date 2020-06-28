@@ -22,7 +22,6 @@
           <div class="card-block">
 
             <a href="#" ref="btnShow" @click="showModal(card.id+'weather')" class="card-link">Weather</a>
-
             <b-modal :id="card.id+'weather'" class="weather" title='Weather' size="xl">
               <div class="d-block">
                 <b-dropdown id="searchW" :text='card.location' class="modal-title" v-on:change="">
@@ -30,13 +29,11 @@
                     {{d.location}}
                   </b-dropdown-item>
                 </b-dropdown>
-
                 <weather :card='card'></weather>
               </div>
             </b-modal>
 
             <a href="#" ref="btnShow" @click="showModal(card.id+'itinerary')" class="card-link">Itenerary Ideas</a>
-
             <b-modal :id="card.id+'itinerary'" class="itnry" title='Itinerary' size="xl">
               <div class="d-block">
                 <b-dropdown id="searchI" :text='card.location' class="modal-title" v-on:change="">
@@ -52,22 +49,7 @@
             <!--<a :href="`/travelphotos#${card.id}`" target="_blank" class="card-link">Travel Photos</a>-->
             <nuxt-link target="_blank" class="card-link" :to="`/travelphotos#${card.id}`">Travel Photos</nuxt-link>
 
-            <a href="#" ref="btnShow" @click="showModal(card.id+'currency')" class="card-link">Currency Rate</a>
-
-            <b-modal :id="card.id+'currency'" class="currency" title='Currency' size="xl">
-              <div class="d-block">
-                <b-dropdown id="searchC" :text='card.location' class="modal-title" v-on:change="">
-                  <b-dropdown-item v-for="d in decks" :key="d.id" :value="d.id" @click="d.id==card.id ? NULL :  hideModal(card.id+'currency'); showModal(d.id+'currency');">
-                    {{d.location}}
-                  </b-dropdown-item>
-                </b-dropdown>
-                <currency :card='card' :money='money' v-if="card.cur != 'USD'"></currency>
-                <p v-if="card.cur == 'USD'">Currency: USD</p>
-              </div>
-            </b-modal>
-
-
-
+            <currency :card='card' :money='money' v-if="card.cur != 'USD'"></currency>
 
           </div>
         </div>
@@ -141,11 +123,6 @@ export default {
 
 <style scoped lang='scss'>
 @import './main.scss';
-/*.modal-dialog {
-  max-height: 100%;
-  display: inline-block;
-  width: auto;
-}*/
 .modal-title {
     text-align: center;
     padding-bottom: 1em;
@@ -164,10 +141,7 @@ export default {
     overflow: hidden;
 }
 .image-card {
-    position: absolute;
-    //width:auto;
-    bottom: -20%;
-    left: 0;
+  margin: -9rem 0 -4rem 0;
 }
 .image-card img {
     transition: 3s ease;
@@ -209,7 +183,8 @@ export default {
     z-index: 2;
     transform: rotateY(0deg);
 }
-a,p {
+a,
+p {
     display: block;
     padding: 2%;
     &:hover {
@@ -229,8 +204,8 @@ a,p {
     width: auto;
     overflow-y: scroll;
     display: flex;
-    padding-top:4%;
-    padding-bottom:4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;

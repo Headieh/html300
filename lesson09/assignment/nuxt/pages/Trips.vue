@@ -112,7 +112,7 @@ export default {
       )
       .catch(
         response => {
-          console.log('The API has errored - Works correctly not on netlify - Netlify only processes data SSL Encryption did not pay for that version of the api therefore uses defined values below for default');
+          console.log('The API has errored - Either max queries have been reached or trying to access on netlify. Netlify only processes data with SSL Encryption, did not pay for that version of the api therefore uses defined values below for default');
           //console.log(response);
           (this.money = {
             "success": true,
@@ -204,6 +204,9 @@ export default {
 
 <style scoped lang='scss'>
 @import './main.scss';
+.Trips{
+  padding:1rem;
+}
 .side {
     margin-top: 1em;
     text-align: left;

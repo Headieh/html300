@@ -12,7 +12,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Dancing+Script:700%7CShadows+Into+Light%7COpen+Sans+Condensed:300&display=swap'}
     ]
   },
   /*
@@ -23,13 +24,21 @@ export default {
   ** Global CSS
   */
   css: [
+
   ],
+
+  //css: [
+  //  '@/assets/scss/main.scss'
+//]
+
   /*
   ** Plugins to load before mounting the App
   */
 
 
-  plugins: [  {src: '~plugins/vuelayers.js', ssr: false},
+  plugins: [
+
+     {src: '~plugins/vuelayers.js', ssr: false},
    { src: '~plugins/vue-highcharts.js', ssr: false }],
 
   /*

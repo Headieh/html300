@@ -48,7 +48,6 @@ export default {
     width: 28rem;
     overflow: hidden;
 }
-
 .carousel-item {
     object-fit: cover;
     height: 18.75rem;

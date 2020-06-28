@@ -1,10 +1,12 @@
 <template>
 <article class="mconv">
   <!--{{this.money}}-->
-  <label for="usmoney">USD:</label>
+  <label for="usmoney">USD:
   <input v-on:click='reset()' v-on:change='updateValue()' ref="usmoney" type="number"  min="0" step="0.01" id="usmoney" name="usmoney"><br>
-  <label for="othermoney"> {{this.otherList[0]}}: </label>
+</label>
+  <label for="othermoney"> {{this.cur}}:
   <input v-on:click='reset()' v-on:change='updateValue()' ref="othermoney" type="number" min="0" step="0.01" id="othermoney" name="othermoney">
+</label>
   <br>
 </article>
 </template>
@@ -55,28 +57,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.form-filter {
-    display: block;
-    position: absolute;
-    padding-left: 1.5rem;
-    padding-top: 0;
-    padding-bottom: 4em;
-    margin-left: 4em;
-}
 
-.chart {
-    border: none; //1px solid #000;
-    padding: 1.5rem;
-    width: 100%;
-    //overflow-x: visible;
-    //overflow-x: visible;
-
-    &__title {
-        font-size: 1rem;
-        margin-bottom: 0.25rem;
-    }
-    &__copy {
-        font-size: 0.875rem;
-    }
+.mconv{
+  width: auto;
+  display: flex;
+  padding: .15em;
+  margin: .15em;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 </style>

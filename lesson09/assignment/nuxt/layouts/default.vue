@@ -9,6 +9,7 @@
               <nuxt-link class="nav-item" to="/about">About Us</nuxt-link>
               <nuxt-link class="nav-item" to="/trips">Trips</nuxt-link>
               <nuxt-link class="nav-item" to="/travelphotos">Travel Photos</nuxt-link>
+              <!--<b-navbar-brand href="#">Travel with Nichole</b-navbar-brand>-->
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
@@ -64,6 +65,6 @@ li {
     color: #2c3e50;
 }
 #bod {
-    padding: 1rem;
+    //padding: 1rem;
 }
 </style>

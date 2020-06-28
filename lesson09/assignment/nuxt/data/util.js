@@ -68,7 +68,7 @@ var decks = [{
     'images': 'thaibeach.png',
     'area': 'Asia',
     'title': 'phi phi island',
-    'text': "Picture of beach in Thailand",
+    'text': "Beach in Thailand with long-tail boats",
     'it': thai,
     'lat': '13.7000',
     'lon': '100.5667',
@@ -77,7 +77,7 @@ var decks = [{
   {
     'location': 'Thailand',
     'images': 'thai.png',
-    'text': "Picture of elephant in Thailand",
+    'text': "baby elephant",
     'title': 'chiang mai elephant sanctuary',
   }
 ];
@@ -93,20 +93,51 @@ var accordionObject = [
       text: "Hello and welcome to my site. This project was made to demonstrate my skills using Vue and to inspire wanderlust to all those who travel to this page. This site provides helpful information before traveling abroad, and recommendations based on personal experience. I hope you enjoy looking through it as much as I enjoyed making it. Let the adventures begin!"
     },
   {
-    title: "Booking Conditions",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni mollitia modi quis, sequi minima voluptatum aliquid est veritatis, culpa voluptas dolores ea, itaque dolorem fugiat eius odio inventore quibusdam. Voluptatibus reiciendis magnam autem nam, quisquam eum cumque possimus. Perspiciatis, deleniti, illum alias cupiditate est, nihil atque, explicabo esse amet laudantium tempore? Placeat, optio tenetur. Facere laborum velit omnis ea veniam expedita, suscipit architecto consectetur itaque. Ipsum possimus, animi tenetur consequatur odio quasi illum deleniti amet itaque. Impedit ipsam cumque et, fuga. Sed distinctio laudantium, delectus aperiam obcaecati ex tenetur eius."
-  },
-  {
-    title: "Travel Insurance",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste distinctio dolores ab voluptatem, vel expedita nemo ducimus, porro dolor, molestiae? Enim quaerat ullam, labore quas perspiciatis veniam magnam suscipit quod optio eveniet corrupti in dolorem architecto fuga magni, laborum, atque! Tenetur mollitia, perferendis provident odit dolores, laboriosam necessitatibus veritatis neque eum magnam dicta corporis, nobis a. Tempora, delectus minus!"
-  },
-  {
     title: "FAQ",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam assumenda ullam corrupti provident, dolorum pariatur libero illum. Alias nam voluptate, iste tempore, distinctio possimus quo quibusdam velit mollitia rerum deleniti, nostrum repellendus reiciendis ducimus voluptatum culpa asperiores voluptas numquam totam officia doloribus fugiat itaque illum corrupti. Laudantium, reiciendis? Expedita itaque veritatis porro accusantium deserunt exercitationem, magnam cupiditate nemo sint tempora."
+    text: [{q: 'What was your favorite country to visit?', a: 'Costa Rica, but Italy and Croatia come in close seconds'},
+    {q:"Where are you planning to go next?" , a: 'Looking forward to traveling to the Swiss Alps however things might get postponed due to COVID'}]
+
   }
 ]
 
 export {
   accordionObject
 }
+
+
+var quotes = [
+{q:"FEAR IS ONLY TEMPORARY. REGRETS LAST FOREVER.",
+a:""},
+{q:"LIFE BEGINS AT THE END OF YOUR COMFORT ZONE.",
+a:""},
+{q:"CLIMB THE MOUNTAIN SO YOU CAN SEE THE WORLD, NOT SO THE WORLD CAN SEE YOU.",
+a:"DAVID MCCULLOUGH"},
+{q:"DON’T WORRY ABOUT THE WORLD ENDING TODAY, IT’S ALREADY TOMORROW IN AUSTRALIA.",
+a:"CHARLES M. SCHULZ"},
+{q: "THE IMPORTANT THING IS TO NEVER STOP QUESTIONING. CURIOSITY HAS ITS OWN REASON FOR EXISTING",
+a: "ALBERT EINSTEIN"},
+{q:"TRAVEL IS THE ONLY THING YOU BUY THAT MAKES YOU RICHER.",
+a:""},
+{q:"IT IS BETTER TO SEE SOMETHING ONCE THAN TO HEAR ABOUT IT A THOUSAND TIMES.",
+a:""},
+{q:"LIVE WITH NO EXCUSES AND TRAVEL WITH NO REGRETS",a:"OSCAR WILDE"},
+{q:"DON'T QUIT YOUR DAY DREAM",a:""},
+{q:"DON'T LISTEN TO WHAT THEY SAY, GO SEE",a:"CHINESE PROVERB"},
+{q:"I DON'T KNOW WHERE I'M GOING, BUT I'M ON MY WAY",a:""},
+{q:"TRY TO BE A RAINBOW IN SOMEONE ELSE'S CLOUD",a:"MAYA ANGELOU"},
+{q:"I WANT TO MAKE MEMORIES ALL OVER THE WORLD",a:""},
+{q:"LIFE ISN'T ABOUT FINDING YOURSELF. LIFE IS ABOUT CREATING YOURSELF.",a:""},
+{q:"IF YOUR SHIP DOESN'T COME IN, SWIM OUT TO IT.",a:"JOHNATHAN WINTERS"},
+{q:"THOSE WHO FOLLOW THE CROWD USUALLY GET LOST IN IT.",a:"RICK WATSON"},
+{q:"DOING WHAT YOU LIKE IS FREEDOM, LIKING WHAT YOU DO IS HAPPINESS.",a:""},
+{q:"LET'S FIND SOME BEAUTIFUL PLACE TO GET LOST",a:""},
+{q:"I'M IN LOVE WITH CITIES I'VE NEVER BEEN TO AND PEOPLE I'VE NEVER MET.",a:"JOHN GREEN"},
+{q:"TRAVEL HAS A WAY OF STRETCHING THE MIND.",a:"RALPH CRAWSHAW"}]
+
+export {
+  quotes
+}
+
+
+
 //Rancho Baiguate hotel
