@@ -1,7 +1,7 @@
 {
-  "name": "nuxt",
+  "name": "Travel with Nichole",
   "version": "1.0.0",
-  "description": "My mathematical Nuxt.js project",
+  "description": "A Nuxt.js project",
   "author": "Nichole Godwin",
   "private": true,
   "scripts": {
