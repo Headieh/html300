@@ -1,11 +1,16 @@
 <template>
-<div class='home quote-container'>
+<div class='home'>
+  <div class='clouds'>
+    <div class='clouds2'><img src='@/assets/clouds.png'></div>
+  <div class='clouds1'><img src='@/assets/clouds.png'></div></div>
+  <div class='quote-container'>
+
 <!--  <nuxt-link class="card-link" to="/trips">Enter Site</nuxt-link>
     <div class='quote-container'>-->
       <p v-if='this.quotes.q' class="quote">{{this.quotes.q.toLowerCase() | ALLCAPs }}</p>
       <p v-if='this.quotes.a' class='author'>{{this.quotes.a.toLowerCase() | PascalCase }}</p>
 <!--<app-jumbo></app-jumbo>-->
-</div><!--</div>-->
+</div></div>
 </template>
 
 <script>
@@ -63,25 +68,39 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-a {
-    color: white;
-}
+@import './main.scss';
+a {color: white;}
 
 .quote-container{
   display: flex;
+  position: relative;
+  z-index: 2;
   font-family: 'Shadows Into Light', sans-serif;
   justify-content: center;
   margin: 18%;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column;}
 
-}
 .home{
+  position: absolute;
   height: 100vh;
-  width: auto;
+  width: 100vw;
   margin:0;
   padding:0;
+  z-index: -1;
   background-image: linear-gradient(to bottom right, grey, lightblue);
+}
+
+
+.clouds1 img{
+  position: absolute;
+    z-index: 1;
+  animation: clouds1 infinite 300s linear;
+}
+.clouds2 img{
+  position: absolute;
+    z-index: 0;
+  animation: clouds2 infinite 300s linear;
 }
 
 .quote{
