@@ -1,12 +1,15 @@
 <template>
-<article class="chart">
+  <div>
+
   <div class="form-filter">
     <button @click='changeUnit(false)'> Metric (°C | mm) </button>
     <button @click='changeUnit(true)'>Imperial (°F | in) </button>
   </div>
-  <br>
+
+  <article class="chart">
   <highcharts :options="chartOptions" :highcharts="hcInstance"></highcharts>
 </article>
+</div>
 </template>
 
 <script>
@@ -156,20 +159,15 @@ export default {
 <style scoped lang="scss">
 .form-filter {
     display: block;
-    position: absolute;
-    padding-left: 1.5rem;
-    padding-top: 0;
-    padding-bottom: 4em;
-    margin-left:4em;
+    bottom: 0;
+    margin:.5em;
 }
 
 
 .chart {
-    border: none;//1px solid #000;
-    padding: 1.5rem;
+    border: none;
+    padding: .5rem;
     width: 100%;
-    //overflow-x: visible;
-    //overflow-x: visible;
 
     &__title {
         font-size: 1rem;

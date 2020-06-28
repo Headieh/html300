@@ -2,9 +2,6 @@
   <div class="wrapper">
     <section class="container" v-if="countries">
 <p> Average Weather Data Collected from {{countries.meta.start}} to {{countries.meta.end}} </p>
-<!--</p> <br>  <p>-->
-    <!--<p>{{countries.meta}}</p>
-    <p>{{countries.data}}</p> -->
         <chart :country="countries.data"/>
     </section>
   </div>
@@ -48,20 +45,15 @@ export default {
 
 <style scoped lang='scss'>
 .container {
-  min-height: 100vh;
-  max-width: 1200px;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   text-align: center;
-  flex-wrap: wrap;
 }
 p{
   padding:0;
   margin:0;
   display:block;
 }
+
 </style>
 
 

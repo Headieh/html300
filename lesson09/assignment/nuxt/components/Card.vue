@@ -128,6 +128,7 @@ export default {
     padding-bottom: 1em;
     margin: auto;
 }
+
 .wrapper {
     width: auto;
     height: 100%;
