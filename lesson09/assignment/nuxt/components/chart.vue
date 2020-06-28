@@ -31,7 +31,7 @@ export default {
     changeUnit(e) {
       if (e == true) {
         let prcpListN = this.prcpList.map(function(element) {
-          return Math.round(element / 25.4)
+          return +((element / 25.4).toFixed(2))
         });
         let tavgListN = this.tavgList.map(function(element) {
           return Math.round((element * (9 / 5)) + 32)
@@ -87,8 +87,9 @@ export default {
       tavgListN.push(Math.round(obj['tavg']));
     })
     c.forEach(function(obj) {
-      prcpList.push(Math.round(obj['prcp']));
-      prcpListN.push(Math.round(obj['prcp']));
+
+      prcpList.push(+(obj['prcp'].toFixed(2)));
+      prcpListN.push(+(obj['prcp'].toFixed(2)));
     })
     c.forEach(function(obj) {
       monthList.push(obj['month']);
