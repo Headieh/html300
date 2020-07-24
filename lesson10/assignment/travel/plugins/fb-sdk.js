@@ -22,7 +22,7 @@ vue_fb.install = function install(Vue, options) {
 import Vue from 'vue'
 
 Vue.use(vue_fb, {
-    appId: 'your-app-id',
+    appId: '670822760024262',
     autoLogAppEvents: true,
     xfbml: true,
     version: 'v2.9'

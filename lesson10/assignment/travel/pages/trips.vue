@@ -67,10 +67,10 @@
 
   <footer>
 
-<!--    <div class="fb-share-button"
+   <div class="fb-share-button"
 data-href="https://nichole-travel.netlify.app"
 data-layout="button_count">
-</div>-->
+</div>
 
     <a href="#" ref="btnShow" @click="showModal('photocred')" class="credit">Photo Credits</a>
     <b-modal id="photocred" title='Photo Credits' size="xl">

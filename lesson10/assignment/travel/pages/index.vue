@@ -129,6 +129,6 @@ export default {
 }
 .author{
   font-size: large;
-  color: black;
+  color: $black;
 }
 </style>
