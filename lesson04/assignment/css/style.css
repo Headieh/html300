@@ -1,0 +1,95 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 2; }
+  50% {
+    transform: scale(1.8);
+    opacity: 5; }
+  100% {
+    transform: scale(1);
+    opacity: 8; } }
+
+/*https://codepen.io/Digitango/pen/YQQBXR pulsing animation source code */
+.fa-heart-o {
+  color: #F1352B;
+  padding: .5em;
+  animation: 2s pulsate infinite alternate ease-in-out;
+  cursor: pointer; }
+
+.fa-heart {
+  transform: scale(2);
+  padding: .5em;
+  color: #F1352B;
+  cursor: pointer; }
+
+.heart:hover {
+  transform: scale(2);
+  animation: '';
+  cursor: pointer; }
+
+img {
+  width: 100%;
+  overflow: hidden;
+  margin: auto; }
+
+.card {
+  width: 33%;
+  position: relative; }
+
+/*https://www.w3schools.com/howto/howto_css_flip_card.asp card flipping source code*/
+.card.is-flipped .card__face {
+  transform: rotateY(180deg); }
+
+.card__face {
+  text-align: center;
+  transition: transform 1.5s;
+  transition-timing-function: linear;
+  transform-style: preserve-3d; }
+  .card__face--front, .card__face--back {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    height: auto; }
+  .card__face--back {
+    transform: rotateY(180deg);
+    background: #f6f5f6; }
+
+a {
+  color: #4d4d4d;
+  display: block;
+  padding: .5em;
+  margin: .5em;
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover, a:focus {
+    color: #120d7f;
+    text-decoration: underline; }
+
+/* https://codepen.io/jstn/pen/zuDst underline animation source code
+personally like the middle to outward better but had to look different for assignment*/
+.flipper {
+  position: relative;
+  display: inline-block; }
+  .flipper:before, .flipper:after {
+    content: "";
+    position: absolute;
+    bottom: -1em;
+    width: 0px;
+    height: .25em;
+    margin: 5em 0 1em;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    background: #120d7f; }
+  .flipper:before {
+    left: 0; }
+  .flipper:after {
+    right: 0; }
+  .flipper:hover {
+    cursor: pointer; }
+    .flipper:hover:before, .flipper:hover:after {
+      width: 50%;
+      opacity: 1; }
+
+/* other cool ideas https://css-tricks.com/having-fun-with-link-hover-effects/ */

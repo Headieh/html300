@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
-</head>
-<body>
-  <main class="main">
-
-  </main>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <script src="https://kit.fontawesome.com/4c496fc4fb.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <!--icon came from https://gauger.io/fonticon/  was getting an error in devtools without it-->
+      <title>Transformation</title>
+   </head>
+   <body>
+      <main class="main">
+         <div class="card">
+            <header>
+               <i class="heart fa fa-heart-o"></i>
+               <h2 class= flipper>Costa Rica</h2>
+            </header>
+            <div class="card__face">
+               <div class="card__face--front">
+                  <!-- picture on front of card -->
+                  <img src="./img/costarica.jpg" alt="Costa Rica Beach Landscape">
+               </div>
+               <div class="card__face--back">
+                  <!-- some info on back of card - to be populated correctly later-->
+                  <!-- removed and added some links for testing of jquery image height stuff-
+                     not working perfectly yet but I'm sure code will get removed
+                     or updated later in the project with better logic -->
+                  <a href = #>Itenerary Ideas</a>
+                  <a href = #>Weather</a>
+                  <a href = #>Images</a>
+                  <a href="https://www.google.com/flights" target="_blank">Flights</a>
+                  <a href = #>Recommended Transportation</a>
+                  <a href = #>Recommended Hotels</a>
+               </div>
+            </div>
+         </div>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="index.js"></script>
+   </body>
 </html>
