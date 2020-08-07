@@ -1,5 +1,21 @@
 // Media Query Generator
 
+// centers the text in the box
+@mixin centerscreen {
+  min-width: 50%;
+  margin: 25%;
+}
+
+@mixin outerflexboxs {
+  padding: 1em;
+  display: inline-flex;
+  align-items: center;
+	justify-content: space-around;
+  flex-direction: row;
+}
+
+
+
 @mixin media-query($mq) {
 
     $breakpoint-found: false;

@@ -1,12 +1,23 @@
 // Colors
-$gray: #f6f5f6;
+//@import "bourbon"; in node_modules but errors
 $white: #ffffff;
 $black: #000000;
-$green: #7acb00;
-$pink: #ff0097;
+$xd-outline: #d8d8d8;
+$xd-outter: #f2f4f7;
+$xd-inner: #f3f3f3;
+$xd-text: #707070;
+$xd-linkedin: #006b9d;
 $red: #F1352B;
-$orange: #ff6600;
-$yellow: #ffb617;
-$robins: #01c1d6;
-$purple: #6e27c5;
-$blue: #150f96;
+$font-fam: arial, helvetica, sans-serif;// cursive;
+
+
+$base-color:       $xd-linkedin;
+$darken-color:     darken( $base-color, 20% );
+$lighten-color:    lighten( $base-color, 1% );
+$saturate-color:   saturate( $base-color, 50% );
+$desaturate-color: desaturate( $base-color, 20% );
+$hue-color:        adjust-hue( $base-color, 50% );
+$opacity-color:    rgba( $base-color, .5 );
+//need bourbon
+//$tint-color:       tint( $base-color, 50% );
+//$shade-color:      shade( $base-color, 50% );

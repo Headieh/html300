@@ -1,17 +1,155 @@
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: $font-fam;
+	//overwrites _base.normalize sans-serif;
+	//could replace there instead of here
 }
 
 *,
 *:after,
 *:before {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 .main {
-    padding: 2rem;
+	padding: 2rem;
 }
 
 h1 {
-    color: $red;  
+	color: $red;
+}
+
+img {
+	width: 10em;
+	height: 10em;
+	//width:10%;
+	//height:10%;
+	border-radius: 50%;
+	@include media-query($mq: 'mobile') {
+		//using em instead of % to demonstrate use of media query mixin
+		width: 8em;
+		height: 8em;
+	}
+}
+
+.container {
+	//put card at center of screen
+	@include centerscreen;
+	//repeated flexbox parameters
+	@include outerflexboxs;
+	border: {
+		style: solid;
+		width: .5px;
+		color: $xd-outline;
+	}
+	background-color: $xd-outter;
+}
+
+.middle {
+	//repeated flexbox parameters
+	@include outerflexboxs;
+	flex-wrap: wrap;
+	min-width: 100%;
+	margin: auto;
+	background: $white;
+}
+
+.rightside {
+	display: inline-flex;
+	align-items: left;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 1em;
+	background: $xd-inner;
+	color: $xd-text;
+	min-width: 60%;
+	//min-width: 100%; for testing
+	//background: $black; for testing
+	@include media-query($mq: 'mobile') {
+		min-width: 100%;
+		// background: $black; for testing
+		//Media query is probably not needed due to wrap on flexbox - but was part of assignment to use it to wrap
+		//tested that it works with changing the background to black anyway
+	}
+}
+
+.leftside {
+	display: inline-flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	min-width: 30%;
+	margin-right: 1em;
+	background: $white;
+	color: $xd-text;
+}
+
+.company {
+	display: inline;
+	padding: .25em;
+	margin: .5em;
+	&:before {
+		content: "Company: ";
+		font-weight: bold;
+	}
+}
+
+.experience {
+	display: inline;
+	padding: .25em;
+	margin: .5em;
+	&:before {
+		content: "Experience: ";
+		font-weight: bold;
+	}
+}
+
+.school {
+	display: inline;
+	padding: .25em;
+	margin: .5em;
+	&:before {
+		content: "School: ";
+		font-weight: bold;
+	}
+}
+
+.major {
+	display: inline;
+	padding: .25em;
+	margin: .5em;
+	&:before {
+		content: "Major: ";
+		font-weight: bold;
+	}
+}
+
+.email {
+	display: inline;
+	padding: .25em;
+	margin: .5em;
+	&:before {
+		content: "Email: ";
+		font-weight: bold;
+	}
+}
+
+//Use with jQuery for description
+
+//.description {
+//  display: inline;
+//  padding:.25em;
+//  margin:.5em;
+//}
+
+//use with jQuery for description label- could potentially use a mixin?
+
+//.label{font-weight: bold;}
+
+.fa-linkedin {
+	//color: $xd-linkedin;
+	//color: $black;
+	color: $lighten-color; //color function
+	display: inline;
+	margin: .5em;
 }
