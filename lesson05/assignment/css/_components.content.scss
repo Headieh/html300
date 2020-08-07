@@ -8,6 +8,112 @@ html {
     box-sizing: inherit;
 }
 
-.main {
-    padding: 2rem;
+.header{
+  background-color: $red;
+  grid-area: header;
+  padding: 1rem;
+  text-align: center;
+  font-size: $xlarge;
+}
+
+.nav{
+  background-color: $green;
+  grid-area: nav;
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: $large;
+  &__item{
+      padding: .25rem;
+
+  }
+}
+
+.side{
+  grid-area: side;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-color: $purple;
+  grid-area: side;
+  @include media-query($mq: 'mobile') {
+    flex-direction: row;
+	}
+  &__list{
+    list-style: none;
+    text-align: right;
+    font-size: $medium;
+  }
+  &__list[data-title]::before{
+    content: attr(data-title); //displays data-title for __items
+  }
+
+  &__item{
+    font-size: $large;
+  }
+  &__link{
+    color: $white;
+    text-decoration: none;
+    &:hover {
+       text-decoration: underline;
+       }
+  }
+}
+
+.main{
+  background-color: $orange;
+  grid-area: main;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.foot{
+  background-color: $blue;
+  grid-area: footer;
+  padding: 1rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: $small;
+  &__item{
+      padding: .25rem;
+  }
+}
+
+//https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe
+//https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+//template layout per assignment
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav nav'
+    'side main'
+    'footer footer';
+  grid-gap: 0px;
+  color: $white;
+  padding: 0px;
+  //Could not figure out extra bonus- will try again later
+  // (Use grid templating and try out the repeat and autofill techniques.)
+  //used media query to put sidebar on top of main content when on mobile devices
+  @include media-query($mq: 'mobile') {
+    grid-template-areas:
+      'header'
+      'nav'
+      'side'
+      'main'
+      'footer';
+	}
 }
